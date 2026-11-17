@@ -2589,3 +2589,13 @@ body.light-theme .demo-tab.is-active .tab-t {
     font-size: 28px;
   }
 }
+/* ===== 预览版：只展示首页（2026-11-18 加） ===== */
+/* 顶部导航整条隐藏；nav 是 position:fixed，隐藏后不影响页面流 */
+.nav { display: none !important; }
+/* 隐藏导航后首屏上边距收一点，避免顶部空太多 */
+@media (min-width: 901px) {
+  .hero { padding-top: 72px; }
+}
+@media (max-width: 900px) {
+  .hero { padding-top: 56px; }
+}
