@@ -2599,3 +2599,8 @@ body.light-theme .demo-tab.is-active .tab-t {
 @media (max-width: 900px) {
   .hero { padding-top: 56px; }
 }
+/* ===== 展示页：去掉「联系我们」与整个页脚（2026-11-18 加） ===== */
+#contact,
+footer.footer { display: none !important; }
+/* #proof 成为最后一屏，底部留出收尾空间 */
+#proof { padding-bottom: 96px; }
